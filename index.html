@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmalya Ghosh | Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <!-- Icons -->
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="loader-text">NG</span>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+    <!-- Theme Toggle & Navigation -->
+    <nav class="navbar">
+        <div class="nav-actions">
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" role="button" aria-label="Toggle navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="logo">NG<span>.</span></div>
+    </nav>
+
+    <!-- 3D Canvas -->
+    <div id="canvas-container"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-text">
+                <span class="hero-greeting">Hello, I'm</span>
+                <h1 class="hero-name">Nirmalya <span>Ghosh</span></h1>
+                <p class="hero-role">App Development | UI/UX Designer | Ethical Hacking | Student</p>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="hero-bg-shape"></div>
+                <img src="./assets/images/profile.jpg" alt="Nirmalya Ghosh" class="hero-img" data-tilt
+                    fetchpriority="high" width="400" height="400">
+
+                <!-- Orbiting Social Icons -->
+                <!-- LinkedIn (Top Rightish) -->
+                <a href="https://www.linkedin.com/in/nirmalya-ghosh-422569377/" target="_blank"
+                    class="orbit-icon orbit-1" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <!-- GitHub (Bottom Rightish) -->
+                <a href="https://github.com/TyphoonCoder2007" target="_blank" class="orbit-icon orbit-2"
+                    aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <!-- WhatsApp (Bottom Leftish) -->
+                <a href="https://wa.me/918967836222" target="_blank" class="orbit-icon orbit-3" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <!-- Gmail (Top Leftish) -->
+                <a href="mailto:nirmalyaghosh0727@gmail.com" class="orbit-icon orbit-4" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <p class="hero-image-tagline">“I build intelligent systems that solve real-world problems.”</p>
+            </div>
+
+            <div class="hero-buttons">
+                <!-- Resume -->
+                <a href="https://drive.google.com/file/d/11PAPOiUQRf-lMziJCz0ROhQoja_QhBSx/view?usp=sharing"
+                    target="_blank" class="cta-button subtle-btn">
+                    <span class="btn-text">Resume</span>
+                    <i class="fas fa-download"></i>
+                </a>
+
+                <!-- Certifications -->
+                <a href="https://little-cake-29a6.nirmalyaghosh2127.workers.dev/" target="_blank"
+                    class="cta-button subtle-btn">
+                    <span class="btn-text">Certifications</span>
+                    <i class="fas fa-certificate"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-wrapper">
+
+                <!-- Floating Cubes for 3D Effect -->
+                <div class="floating-cube cube-1"></div>
+                <div class="floating-cube cube-2"></div>
+                <div class="floating-cube cube-3"></div>
+                <div class="cube-ghost"></div>
+
+                <!-- About Me Bio Section -->
+                <div class="bio-container">
+                    <div class="about-header">
+                        <h2 class="about-arrow-header"><span style="margin-right: 0.5em;">About</span>Me</h2>
+                    </div>
+                    <p class="about-bio centered-bio">
+                        I am a passionate B.Tech student at <strong>KIIT ('29)</strong> aspiring to become a skilled
+                        Software Engineer.
+                        My technical toolkit spans <strong>Java, Python, and C</strong> for backend logic and
+                        problem-solving,
+                        supported by hands-on experience in <strong>HTML, CSS, and JavaScript</strong> for crafting
+                        dynamic web interfaces.
+                    </p>
+                    <p class="about-bio centered-bio">
+                        Beyond core development, I am actively expanding my capabilities in <strong>App Development,
+                            UI/UX Design, and Ethical Hacking</strong>—enabling
+                        me to build secure, intuitive, and high-performance digital solutions. I am consistently working
+                        on projects that bridge the gap
+                        between theory and real-world application, while refining my understanding of user-centric
+                        design and system security.
+                    </p>
+                    <p class="about-bio centered-bio">
+                        I am open to internships and collaborative opportunities in software development, web
+                        development, and app-based innovation,
+                        where I can contribute meaningfully and continue to grow.
+                    </p>
+                </div>
+
+                <!-- Education Section -->
+                <div class="education-container">
+                    <div class="about-header">
+                        <h2 class="about-arrow-header"> Education</h2>
+                    </div>
+
+                    <div class="education-content">
+                        <!-- KIIT -->
+                        <div class="education-item">
+                            <h3>KIIT (Kalinga Institute of Industrial Technology) – Bhubaneswar</h3>
+                            <p class="edu-degree">B.Tech in Computer Science / Information Technology (2029)</p>
+                            <p class="edu-details"><strong>Relevant Coursework:</strong> Data Structures & Algorithms,
+                                Computer Networks, Database Management Systems, Web Technologies, Object-Oriented
+                                Programming.</p>
+                            <p class="edu-details"><strong>Academic Focus:</strong> Building a strong theoretical and
+                                practical foundation in software engineering principles.</p>
+                        </div>
+
+                        <!-- Schools -->
+                        <div class="education-item">
+                            <h3>Schooling</h3>
+                            <p class="edu-details">Graduated from <strong>Beachwood School (CBSE)</strong> - 2025</p>
+                            <p class="edu-details">Graduated from <strong>St. Xavier's School (ICSE)</strong> - 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="about-wrapper">
+                <div class="about-header">
+                    <h2 class="about-arrow-header"> Skills</h2>
+                </div>
+
+                <div class="about-content-row">
+                    <!-- Skills Container -->
+                    <div class="skills-grid-new">
+                        <!-- Languages -->
+                        <div class="skill-pill" data-tilt>
+                            <div class="pill-header">
+                                <i class="fas fa-code"></i>
+                                <h3>Languages</h3>
+                            </div>
+                            <div class="pill-content">
+                                <span>Java</span>
+                                <span>Python</span>
+                                <span>C</span>
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+
+                        <!-- Web Development -->
+                        <div class="skill-pill" data-tilt>
+                            <div class="pill-header">
+                                <i class="fas fa-globe"></i>
+                                <h3>Web Dev</h3>
+                            </div>
+                            <div class="pill-content">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>REST APIs</span>
+                                <span>Responsive Design</span>
+                            </div>
+                        </div>
+
+                        <!-- App Development -->
+                        <div class="skill-pill" data-tilt>
+                            <div class="pill-header">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h3>App Dev</h3>
+                            </div>
+                            <div class="pill-content">
+                                <span>Android (Java/Kotlin)</span>
+                                <span>Flutter (Beginner)</span>
+                                <span>Mobile UI</span>
+                                <span>API Integration</span>
+                            </div>
+                        </div>
+
+                        <!-- UI/UX Design -->
+                        <div class="skill-pill" data-tilt>
+                            <div class="pill-header">
+                                <i class="fas fa-pen-nib"></i>
+                                <h3>UI/UX Design</h3>
+                            </div>
+                            <div class="pill-content">
+                                <span>Figma</span>
+                                <span>Wireframing</span>
+                                <span>Prototyping</span>
+                                <span>User Flow</span>
+                                <span>Visual Design</span>
+                            </div>
+                        </div>
+
+                        <!-- Databases -->
+                        <div class="skill-pill" data-tilt>
+                            <div class="pill-header">
+                                <i class="fas fa-database"></i>
+                                <h3>Databases</h3>
+                            </div>
+                            <div class="pill-content">
+                                <span>MySQL</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+
+                        <!-- Ethical Hacking -->
+                        <div class="skill-pill" data-tilt>
+                            <div class="pill-header">
+                                <i class="fas fa-user-secret"></i>
+                                <h3>Ethical Hacking</h3>
+                            </div>
+                            <div class="pill-content">
+                                <span>Kali Linux</span>
+                                <span>Nmap</span>
+                                <span>Vuln Assessment</span>
+                                <span>Pen Testing</span>
+                                <span>Cybersec Basics</span>
+                            </div>
+                        </div>
+
+                        <!-- Tools & Platforms -->
+                        <div class="skill-pill" data-tilt>
+                            <div class="pill-header">
+                                <i class="fas fa-tools"></i>
+                                <h3>Tools</h3>
+                            </div>
+                            <div class="pill-content">
+                                <span>Git & GitHub</span>
+                                <span>VS Code</span>
+                                <span>Linux</span>
+                                <span>AWS Basics</span>
+                                <span>Docker</span>
+                                <span>Android Studio</span>
+                            </div>
+                        </div>
+
+                        <!-- Concepts -->
+                        <div class="skill-pill" data-tilt>
+                            <div class="pill-header">
+                                <i class="fas fa-brain"></i>
+                                <h3>Concepts</h3>
+                            </div>
+                            <div class="pill-content">
+                                <span>OOP</span>
+                                <span>Data Structures</span>
+                                <span>Algorithms</span>
+                                <span>System Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div> <!-- End about-content-row -->
+
+                <!-- Relocated Stats Section -->
+                <div class="glossy-grid relocated-stats">
+                    <div class="glossy-card blue-tint" data-tilt data-tilt-max="20" data-tilt-perspective="1000"
+                        data-tilt-scale="1.05">
+                        <span class="stat-num-glossy blue-text">6+</span>
+                        <span class="stat-label-glossy">Languages</span>
+                    </div>
+
+                    <div class="glossy-card purple-tint" data-tilt data-tilt-max="20" data-tilt-perspective="1000"
+                        data-tilt-scale="1.05">
+                        <span class="stat-num-glossy purple-text">2029</span>
+                        <span class="stat-label-glossy">Grad Year</span>
+                    </div>
+
+                    <div class="glossy-card large green-tint" data-tilt data-tilt-max="15" data-tilt-perspective="1000"
+                        data-tilt-scale="1.02">
+                        <div class="glossy-title green-text">KIIT</div>
+                        <div class="stat-label-glossy">University</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section id="projects">
+            <h2 class="section-title"><span style="margin-right: 0.5em;">Latest</span>Projects</h2>
+            <div class="projects-wrapper">
+                <div class="projects-horizontal-track">
+                    <!-- Github -->
+                    <a href="https://github.com/TyphoonCoder2007?tab=repositories" target="_blank"
+                        class="project-card card-github" data-tilt>
+                        <div class="icon-circle"><i class="fab fa-github"></i></div>
+                        <h3>Github Repos</h3>
+                        <p>Explore my source code, open-source contributions, and repository history.</p>
+                        <div class="view-project">View Project <i class="fas fa-external-link-alt"></i></div>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/nirmalya-ghosh-422569377/recent-activity/all/" target="_blank"
+                        class="project-card card-linkedin" data-tilt>
+                        <div class="icon-circle"><i class="fab fa-linkedin-in"></i></div>
+                        <h3>LinkedIn Projects</h3>
+                        <p>Professional updates, project showcases, and career milestones.</p>
+                        <div class="view-project">View Project <i class="fas fa-external-link-alt"></i></div>
+                    </a>
+
+                    <!-- LeetCode -->
+                    <a href="https://leetcode.com/progress/" target="_blank" class="project-card card-leetcode"
+                        data-tilt>
+                        <div class="icon-circle"><i class="fas fa-code"></i></div>
+                        <h3>LeetCode Progress</h3>
+                        <p>Algorithmic problem solving, data structures, and coding achievements.</p>
+                        <div class="view-project">View Project <i class="fas fa-external-link-alt"></i></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">
+                    <span style="margin-right: 0.5em;">Get</span>
+                    <span style="margin-right: 0.5em;">In</span>
+                    Touch
+                </h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info-center">
+                        <p class="contact-intro">I’m open to opportunities in software engineering, backend development,
+                            and AI-driven products. If you’re looking for someone who writes clean, scalable code and
+                            enjoys building real-world solutions, feel free to reach out. I also collaborate on
+                            impactful tech projects, research ideas, and internship opportunities.</p>
+
+                        <div class="contact-grid">
+                            <!-- Phone -->
+                            <a href="tel:+918967836222" class="contact-box" aria-label="Phone">
+                                <i class="fas fa-phone"></i>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/nirmalya-ghosh-422569377/" target="_blank"
+                                class="contact-box" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <!-- Email -->
+                            <a href="mailto:nirmalyaghosh2127@gmail.com" class="contact-box" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/TyphoonCoder2007" target="_blank" class="contact-box"
+                                aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/918967836222" target="_blank" class="contact-box"
+                                aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+
+                        <!-- Message Box / Contact Form -->
+                        <div class="form-container">
+                            <form id="contactForm" action="https://formsubmit.co/nirmalyaghosh2127@gmail.com"
+                                method="POST">
+                                <!-- Hidden Configuration -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_subject" value="New Portfolio Message!">
+
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder=" " required>
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder=" " required>
+                                    <label for="email">Your Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="subject" name="subject" placeholder=" " required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                                <button type="submit" class="cta-button">Send Message <i
+                                        class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed & Built by Nirmalya Ghosh &copy; 2025</p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="particles.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" defer></script>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

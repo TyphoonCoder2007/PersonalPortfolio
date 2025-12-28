@@ -1,0 +1,10 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="64" height="64" rx="20" fill="url(#paint0_linear)"/>
+<text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="'Times New Roman', serif" font-weight="bold" font-size="42" fill="white">N</text>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5722"/>
+<stop offset="1" stop-color="#FF9100"/>
+</linearGradient>
+</defs>
+</svg>
